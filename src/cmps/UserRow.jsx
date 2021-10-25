@@ -5,7 +5,7 @@ export class UserRow extends React.Component {
 
  moveToUserDetails=()=>{
     const {user}=this.props;
-window.location.href=`/task/user/?username=${user.login.username}`
+window.location.href=`/user/?username=${user.login.username}`
     }
 
     render(){

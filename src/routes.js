@@ -3,12 +3,12 @@ import {UserDetails} from './pages/UserDetails.jsx'
 
 const routes = [
     {
-      path: "/task",
+      path: "/",
       component: Users,
       label: "Users",
     },
     {
-        path: "/task/user/:username",
+        path: "/user/",
       component: UserDetails,
       label: "UserDetails",
     }
