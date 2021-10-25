@@ -1,0 +1,19 @@
+
+.user-pic-container{
+    width: 100%;
+    height: 100%;
+
+    img{
+        border-radius: 50%
+    }
+}
+
+tr,td{
+    border:1px solid black;
+    border-collapse: collapse;
+}
+tr{
+    td:last-of-type{
+        padding: 10px;
+    }
+}

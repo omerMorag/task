@@ -1,0 +1,70 @@
+.User-Details-Body {
+  margin: 0 auto;
+  text-align: center;
+  max-width: 700px;
+  @media (min-width: 600px) {
+    .map-container {
+      width: 350px;
+      height: 300px;
+      position: relative;
+      margin: auto;
+    }
+  }
+}
+h1 {
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+.card {
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  border: 1 solid black;
+  color: rgb(255, 255, 255);
+  font-size: medium;
+  margin-bottom: 25px;
+
+
+
+  .pic-details-container {
+   img {
+     border-radius: 60px;
+   }
+  }
+}
+
+.rightSide{
+  display: flex;
+flex-direction: column;
+gap:10px;
+
+a:hover {
+  color: rgb(168, 168, 168);
+  background-color: transparent;
+  text-decoration: underline;
+}
+a {
+  color: rgb(255, 255, 255);
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+p{
+  margin:0;
+}
+.name-details{
+  font-size: 25px;
+}
+}
+
+.lodaing{
+  margin-top: 200px;
+  text-align: center;
+  font-size: 40px;
+  font-weight: 300;
+  font-family: EncodeSans;
+  color: white;
+
+}

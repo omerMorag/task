@@ -1,10 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
+import { Switch, Route } from "react-router";
+import routes from "./routes";
 
 function App() {
   return (
     <div className="App">
-      omer morag
+                   <Switch>
+                {routes.map((route) => (
+                  <Route
+                    key={route.path}
+                    exact
+                    component={route.component}
+                    path={route.path}
+                  />
+                ))}
+              </Switch>
     </div>
   );
 }

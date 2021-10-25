@@ -1,0 +1,135 @@
+.body-container {
+  margin: 0 auto;
+  text-align: center;
+  max-width: 700px;
+  @media  (max-width: 600px) {
+    table {
+      border: 0;
+      color: black;
+      font-family: ArchitectsDaughter;
+      font-weight: 150;
+      font-size: 20px;
+  
+   
+    }
+  
+    table caption {
+      font-size: 1.3em;
+    }
+    
+    table thead {
+      border: none;
+      clip: rect(0 0 0 0);
+      height: 1px;
+      margin: -1px;
+      overflow: hidden;
+      padding: 0;
+      position: absolute;
+      width: 1px;
+    }
+    
+    table tr {
+      border-bottom: 3px solid #ddd;
+      display: block;
+      margin-bottom: .625em;
+      
+      &:nth-child(even) {
+        background-color: #cfcfcf;
+      }
+    }
+    
+    table td {
+      border-bottom: 1px solid #ddd;
+      display: block;
+      font-size: 0.8em;
+      text-align: center;
+  
+    }
+    
+    table td::before {
+      /*
+      * aria-label has no advantage, it won't be read inside a table
+      content: attr(aria-label);
+      */
+      content: attr(data-label);
+      float: left;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+    
+    table td:last-child {
+      border-bottom: 0;
+    }
+  }
+}
+
+table {
+  margin: 0;
+  font-family:EncodeSans;
+
+  a:hover {
+    color: rgb(170, 170, 170);
+    background-color: transparent;
+    text-decoration: underline;
+  }
+  a {
+    color: rgb(20, 20, 20);
+    background-color: transparent;
+    text-decoration: underline;
+  }
+}
+
+h1 {
+  margin: 0;
+  padding: 0;
+  color: white;;
+  font-family: ArchitectsDaughter;
+  font-weight: 100;
+font-size: 45px;
+}
+
+.users {
+  border-collapse: collapse;
+  width: 100%;
+
+  td {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  th {
+    border: 1px solid #ddd;
+    padding: 8px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: center;
+    background-color: #0b9a90;
+    color: white;
+  }
+  tr {
+    background-color: #cfcfcf;
+    &:nth-child(even) {
+      background-color: #f2f2f2;
+    }
+    &:hover {
+      background-color: #ddd;
+    }
+  }
+}
+
+
+.pageination {
+  display: flex;
+  flex-direction: rows;
+  justify-content: center;
+  width: 30%;
+  margin: auto;
+  justify-content: space-evenly;
+  margin-top:10px;
+  margin-bottom: 10px;
+  color: white;;
+}
+
+
+.filter{
+  cursor: pointer;
+}
